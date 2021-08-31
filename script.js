@@ -110,7 +110,7 @@ cells.forEach(cell =>
 
 cells.forEach(cell =>
   cell.addEventListener('mouseleave', function () {
-    if (!cell.innerHTML) cell.removeChild(currPlayer);
+    if (cell.innerHTML) cell.removeChild(currPlayer);
   })
 );
 
