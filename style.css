@@ -54,6 +54,7 @@ main {
   text-align: center;
   line-height: 10rem;
   font-size: 11rem;
+  transition: 0.4s;
 }
 
 .cell:hover {
@@ -73,6 +74,7 @@ main {
   position: relative;
   background-color: rgba(255, 255, 255, 0);
   color: #fff;
+  transition: 0.3s;
 }
 
 .btn-start::after {
@@ -100,6 +102,7 @@ main {
   border-radius: 50%;
   position: relative;
   justify-content: center;
+  transition: 0.7s;
 }
 
 .sound:hover {
