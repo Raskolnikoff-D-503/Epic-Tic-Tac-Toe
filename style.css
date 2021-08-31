@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Rajdhani', sans-serif;
+  color: #fff;
+  background: radial-gradient(circle, #446eb8, #375da1);
+  user-select: none;
+}
+
+header {
+  /* width: 100vw;
+  background: radial-gradient(circle, rgb(47, 55, 70), rgb(31, 36, 46));
+  display: flex;
+  justify-content: center; */
+  display: flex; /* establish flex container */
+  flex-direction: row; /* default value; can be omitted */
+  flex-wrap: nowrap; /* default value; can be omitted */
+  justify-content: space-between;
+  background: radial-gradient(circle, rgb(47, 55, 70), rgb(31, 36, 46));
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+main {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  row-gap: 0;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cell {
+  cursor: pointer;
+  background: radial-gradient(circle, #446eb8, #375da1);
+  position: static;
+  display: block;
+  border: 1px solid #fff;
+  width: 10rem;
+  height: 10rem;
+  text-align: center;
+  line-height: 10rem;
+  font-size: 11rem;
+}
+
+.cell:hover {
+  z-index: 1;
+  transform: scale(1.1);
+}
+
+.btn-start {
+  margin-top: 1rem;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 50px 13px;
+  outline: 0;
+  border: 1px solid #fff;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0);
+  color: #fff;
+}
+
+.btn-start::after {
+  content: '';
+  background-color: #35a027;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+}
+
+.btn-start:hover {
+  font-size: 25px;
+}
+
+.sound {
+  margin-left: 5rem;
+  margin-top: 1rem;
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  position: relative;
+  justify-content: center;
+}
+
+.sound:hover {
+  transform: scale(1.1);
+}
+
+img {
+  width: 24px;
+  display: block;
+  margin: auto;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+p {
+  font-size: 1rem;
+  width: 30px;
+  margin-right: 5rem;
+  margin-top: 1rem;
+  position: relative;
+  align-items: center;
+}
+
+.display-cell {
+  opacity: 0.7;
+}
