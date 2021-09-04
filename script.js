@@ -1,12 +1,20 @@
 'use strict';
 
 const label = document.querySelector('h1');
-const cells = document.querySelectorAll('.cell');
+const container = document.querySelector('.container');
 const newGameBtn = document.querySelector('.btn-start');
 const soundBtn = document.querySelector('.sound');
 
-const reservedCells = {};
+// Creating cell elements
+for (let i = 0; i < 9; i++) {
+  const cell = document.createElement('div');
+  cell.classList.add('cell');
+  cell.setAttribute('id', `${i}`);
+  container.appendChild(cell);
+}
+const cells = document.querySelectorAll('.cell');
 
+const reservedCells = {};
 // Array of the winning combinations
 const winCombinations = [
   '012',
